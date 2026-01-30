@@ -6,9 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Experience the Meshteq.ai analytics demo.">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Demo-specific fixes */
+    .demo-nav-disabled {
+      color: #94a3b8 !important; /* Slate-400 */
+      pointer-events: none;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+    .demo-main-heading {
+      color: #0f172a; /* Matches your homepage heading color */
+      letter-spacing: -1px;
+      margin-top: 0.8em;
+      margin-bottom: 0.6em;
+    }
+    .demo-list {
+      color: #374151; /* Much darker for accessibility */
+      font-size: 1.07em;
+      text-align: left;
+      display: inline-block;
+      margin-top: 1.5em;
+      line-height: 1.7;
+    }
+    .btn.primary {
+      background: #22d3ee;
+      color: #131c32;
+      font-weight: 600;
+      border-radius: 8px;
+      font-size: 1.1em;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin-bottom: 2em;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn.primary:hover { background: #0891b2; }
+  </style>
 </head>
 <body>
-  <!-- Site Header (identical to index.html) -->
+  <!-- Site Header -->
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="brand">
@@ -20,11 +56,11 @@
       </a>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="#platform">Platform</a>
-        <a href="#use-cases">Use cases</a>
-        <a href="#packages">Packages</a>
-        <a href="#contact">Contact</a>
-        <a href="#login" class="nav-login">Client login</a>
+        <a href="#" class="demo-nav-disabled">Platform</a>
+        <a href="#" class="demo-nav-disabled">Use cases</a>
+        <a href="#" class="demo-nav-disabled">Packages</a>
+        <a href="#" class="demo-nav-disabled">Contact</a>
+        <a href="#" class="demo-nav-disabled nav-login">Client login</a>
       </nav>
     </div>
   </header>
@@ -32,7 +68,7 @@
   <main id="top">
     <section class="section" style="min-height:60vh;">
       <div class="container" style="text-align:center; max-width:800px;">
-        <h1 style="color:#22d3ee;">Meshteq.ai Live Demo</h1>
+        <h1 class="demo-main-heading">Meshteq.ai Live Demo</h1>
         <p style="margin:1.3em 0 2em;">
           Experience our IoT & agentic AI dashboard for real-time environmental intelligence across Oman.<br>
           Click below to launch the interactive dashboard in a new tab.
@@ -41,13 +77,12 @@
           href="https://demo.meshteq.ai"
           target="_blank"
           class="btn primary"
-          style="font-size:1.1em; margin-bottom:2em;"
         >🚀 Open Live Demo Dashboard</a>
         <br>
         <a href="index.html" style="color:#22d3ee; margin-top:2em; display:inline-block;">← Back to Home</a>
         <hr style="margin:2.5em auto 1.5em auto; opacity:0.18;">
-        <h3>What’s included in this demo?</h3>
-        <ul style="color:#e0e0e0; font-size:1.07em; text-align:left; display:inline-block; margin-top:1.5em;">
+        <h3 style="color:#0f172a; margin-bottom:0.7em;">What’s included in this demo?</h3>
+        <ul class="demo-list">
           <li>Live environmental data for 4 Oman cities</li>
           <li>Trends for temperature, humidity, SO₂, and more</li>
           <li>Agentic AI logic: auto-advice and actionable insights</li>
