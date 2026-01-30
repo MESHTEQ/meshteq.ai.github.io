@@ -1,38 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
   <title>Meshteq.ai – Live Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css" /> <!-- if you have global styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experience the Meshteq.ai analytics demo.">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="background:#0f172a; color:#fff; font-family:sans-serif;">
-  <header style="padding:32px 0;text-align:center;">
-    <h1 style="color:#22d3ee;margin:0;">Meshteq.ai Live Demo</h1>
-    <p>Experience our IoT & Agentic AI dashboard in real time.</p>
-    <a href="index.html" style="color:#22d3ee; margin-top:8px; display:inline-block;">← Back to Home</a>
+<body>
+  <!-- Site Header (identical to index.html) -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="logo-chip">M</span>
+        <span class="brand-text">
+          <span class="brand-name">Meshteq<span class="brand-dot">.</span>Ai</span>
+          <span class="brand-tagline">Analytics & Predictive Intelligence</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="#platform">Platform</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+        <a href="#login" class="nav-login">Client login</a>
+      </nav>
+    </div>
   </header>
 
-  <main style="max-width:1100px; margin:0 auto;">
-    <section style="margin:2em 0; text-align:center;">
-      <h2 style="color:#38bdf8;">Launch Interactive Demo</h2>
-      <a
-        href="https://demo.meshteq.ai"
-        target="_blank"
-        style="display:inline-block; background:#22d3ee; color:#131c32; font-size:1.2em; font-weight:600; padding:16px 32px; border-radius:10px; margin:20px 0; text-decoration:none;"
-      >
-        🚀 Open Live Demo
-      </a>
-    </section>
-    <section>
-      <h3>What You Can See:</h3>
-      <ul style="color:#e0e0e0; font-size:1.1em; line-height:1.7;">
-        <li>Real-time environmental data from multiple Oman cities</li>
-        <li>Trends for temperature, humidity, air quality (SO₂), and more</li>
-        <li>Agentic AI logic (alerts, recommendations)</li>
-        <li>How your infrastructure could be monitored & visualized</li>
-      </ul>
+  <main id="top">
+    <section class="section" style="min-height:60vh;">
+      <div class="container" style="text-align:center; max-width:800px;">
+        <h1 style="color:#22d3ee;">Meshteq.ai Live Demo</h1>
+        <p style="margin:1.3em 0 2em;">
+          Experience our IoT & agentic AI dashboard for real-time environmental intelligence across Oman.<br>
+          Click below to launch the interactive dashboard in a new tab.
+        </p>
+        <a
+          href="https://demo.meshteq.ai"
+          target="_blank"
+          class="btn primary"
+          style="font-size:1.1em; margin-bottom:2em;"
+        >🚀 Open Live Demo Dashboard</a>
+        <br>
+        <a href="index.html" style="color:#22d3ee; margin-top:2em; display:inline-block;">← Back to Home</a>
+        <hr style="margin:2.5em auto 1.5em auto; opacity:0.18;">
+        <h3>What’s included in this demo?</h3>
+        <ul style="color:#e0e0e0; font-size:1.07em; text-align:left; display:inline-block; margin-top:1.5em;">
+          <li>Live environmental data for 4 Oman cities</li>
+          <li>Trends for temperature, humidity, SO₂, and more</li>
+          <li>Agentic AI logic: auto-advice and actionable insights</li>
+          <li>Ideal for utility, O&amp;G, and smart city clients</li>
+        </ul>
+        <!--
+        Optional: Embed the dashboard directly
+        <iframe
+          src="https://demo.meshteq.ai"
+          width="100%"
+          height="900"
+          style="border:0; border-radius:12px; margin-top:2em;"
+          title="Meshteq.ai Demo"
+        ></iframe>
+        -->
+      </div>
     </section>
   </main>
+
+  <!-- Footer (identical to index.html) -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <strong>meshteq.ai</strong> – an AI analytics platform by Meshteq Sdn Bhd.
+      </div>
+      <div class="footer-meta">
+        <span>© <span id="year"></span> Meshteq Sdn Bhd</span>
+        <span>All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
